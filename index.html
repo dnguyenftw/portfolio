@@ -7,6 +7,9 @@
 	<link rel="stylesheet" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Oswald:400,700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Hind|Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target="#menu">
 <!-- Starting Home Section -->
@@ -53,9 +56,9 @@
 </div>
 
 <!-- Landing Page Caption -->
-<div class="caption center-block">
+<div class="caption center-block" data-aos="fade-right" data-aos-duration=1800>
 	<div class="col-md-6" id="landing-cap">
-			<h3>Hello, I'm Daniel. An Aspiring Designer.</h3>
+			<h3 >Hello, I'm Daniel. An Aspiring Designer.</h3>
 			<p>I strive to design for the users of my product with empathy.
 				I love to solve problems that are deeply rooted in the users with clear goals through research findings,
 				quantitative data and my intuition as a passionate designer.</p>
@@ -67,23 +70,23 @@
 <!-- About Me Section -->
 <div id="about">
 	<div class="jumbotron">
-		<h3 class="heading" id="about-title">SOME FACTS ABOUT ME</h3>
+		<h3 class="heading" id="about-title" data-aos="zoom-in">SOME FACTS ABOUT ME</h3>
 	<div class="row">
-		  <div class="col-md-4 text-center">
+		  <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration=800>
 				<h4>B.A. IN MED ANTH</h4>
 				<p>Being able to interpret and explain the biological and cultural
 					diversity of the human species has always gathered my attention.
-					It allows me to better understand how to find ways to live in today's
-					world. I aspire to be able to design technology to cater to the needs
-					of different individuals. Being a student in the humanities and
-					social sciences has gave me core understanding of the importance of
-				 	empathy and engagement.</p>
+					It allows me to better understand how people around the world find ways
+					to live in today's society. I aspire to be able to design technology
+					to cater to the needs of different individuals. Being a student in the
+					humanities and social sciences has gave me core understanding of the
+					importance of empathy and engagement.</p>
 			</div>
-			<div class="col-md-4 text-center">
+			<div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration=1200>
 				<h4>TECHNOLOGY & HELPING OTHERS</h4>
 				<p>I love learning about new technologies, and I also love to help
-					others. Therefore, some of the biggest joys in my life is when I can
-					help others learn how to use technology, or use technology to help
+					others. Therefore, the biggest joys in my life comes from helping
+				  others learn how to use technology, or use technology to help
 					others. I currently teach younger students how to code, and it is
 					always a satisfying experience because not only does it feel great to
 					help the younger generation, but I also learn new coding languages
@@ -92,9 +95,13 @@
 				 	use of it. Whether it be for self improvement or making other lives
 					easier, I hope to be able to make a difference.</p>
 			</div>
-			<div class="col-md-4 text-center">
-				<h4>Hello there</h4>
-				<p>My name is danyell</p>
+			<div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration=1600>
+				<h4>DESIGN</h4>
+				<p>When I have free time, I enjoy prototyping and designing app interfaces
+				   and sharing my work on my dribble account. Being exposed to human
+				   centered design and UX design during my time in University really showed
+				   me how there is a lot more that goes into design than just pure aesthetics.
+				   A responsible design practitioner needs to account for a lot of things. </p>
 			</div>
 	</div> <!-- End of row -->
 	</div> <!-- End of Jumbotron -->
@@ -107,16 +114,16 @@
 			  <h3 class="heading">PORTFOLIO</h3>
 
 		<div class="row no-padding">
-			  <div class="col-md-6">
-					  <img class="portfolio" src="img/throneimage.png"></img>
+			  <div class="col-md-6" data-aos="fade-down-right" data-aos-duration=800>
+					  <img class="portfolio" src="img/project_throne_image.png"></img>
 				</div>
-				<div class="col-md-6">
-					  <img class="portfolio" src="img/2.png"></img>
+				<div class="col-md-6" data-aos="fade-down-left" data-aos-duration=800>
+					  <img class="portfolio" src="img/nobislink_image.png"></img>
 				</div>
-				<div class="col-md-6">
-					  <img class="portfolio" src="img/3.png"></img>
+				<div class="col-md-6" data-aos="fade-up-right" data-aos-duration=800>
+					  <img class="portfolio" src="img/peaktopeak_image.png"></img>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6" data-aos="fade-up-left" data-aos-duration=800>
 					  <img class="portfolio" src="img/4.png"></img>
 				</div>
 		</div> <!-- End Row Section -->
@@ -128,13 +135,37 @@
 <div id="resume">
 	  <h3 class="heading">Resume</h3>
 		<div class="row padding">
-			  <div class="col-md-12">
-					  <div class="card text-center">
+			  <div class="col-md-6">
+					  <div class="card text-center" data-aos="fade-right" data-aos-duration=1000>
 							  <img class="card-img-top" src="img/5.png">
 								<div class="card-body">
 									  <h4>Resume</h4>
 										<p>Learn more about my skills and experiences</p>
 								</div>
+						</div>
+				</div>
+				<div class="col-md-6" data-aos="fade-left" data-aos-duration=1500>
+					  <h1 id="skillsets">SKILL SETS</h1>
+						<div class="skill-set">
+							  <h5 class="skill-title">Design & Prototype</h3>
+								<p>After Effects, Gravit Designer, Invision, Premiere</p>
+						</div>
+						<div class="skill-set">
+							  <h5 class="skill-title">Code</h3>
+								<p>HTML5, CSS3, Javascript, Python, R, Java</p>
+						</div>
+						<div class="skill-set">
+							  <h5 class="skill-title">Communication</h3>
+								<p>Intuitive, Collaborative, Listener, Responsible, Curious, Motivated</p>
+						</div>
+						<div class="skill-set">
+							  <h5 class="skill-title">Language</h3>
+								<p>Proficient understanding in Vietnamese</p>
+						</div>
+						<div class="skill-set">
+							  <h5 class="skill-title">Interests</h3>
+								<p>UX/Product Design, User Interaction Design, AR/VR Technology, Software Development, <Br>
+								   Linguistics, User Research</p>
 						</div>
 				</div>
 		</div>
@@ -147,9 +178,18 @@
 				<div class="row">
 					  <div class="col-md-3"></div>
 						<div class="col-md-6 text-center">
-							  <img src="img/dnlogo.png">
-								<h3>Contact Me</h3>
-								<strong>My Socials:</strong>
+							  <img id="contactlogo" src="img/dnlogo.png">
+								<h3 id="contact-text">Contact Me</h3>
+						</div>
+						<div class="col-md-4 text-center contact-section">
+							<p>Check out my socials:</p>
+							<a href="#" class="fa fa-facebook"></a>
+							<a href="#" class="fa fa-linkedin"></a>
+							<a href="#" class="fa fa-dribbble"></a>
+						</div>
+						<div class="col-md-4 text-center contact-section">
+							<p>Feel free to email me at</p>
+							<strong>danielsynguyen@gmail.com</strong>
 						</div>
 				</div>
 
@@ -160,5 +200,9 @@
 <!--- Script Source Files -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
