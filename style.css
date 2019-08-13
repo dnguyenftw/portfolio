@@ -1,3 +1,8 @@
+html {
+	scroll-behavior: smooth;
+}
+
+
 body {
 	overflow-x: hidden; /*--right gutter fix--*/
 	color: #505962;
@@ -9,11 +14,11 @@ body {
 
 .navbar {
 	text-transform: uppercase;
-	background-color: #FFF;
+	background-image: linear-gradient(to right, #3F414A , #1C1D24);
 }
 
 .navbar-nav li a {
-	color: black;
+	color: white;
 }
 
 .home-inner {
@@ -39,12 +44,85 @@ body {
 	padding: 2rem 0;
 }
 
-.heading {
-	color: black;
+.portfolio:hover {
+	cursor: pointer;
 }
 
-img.portfolio {
-	max-width: 100%;
+.parent {
+  width: 100%;
+  height: 333px;
+	overflow: hidden;
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+  background-color: black; /* fallback color */
+  background-position: center;
+  background-size: cover;
+	transition: all .5s;
+	transform: scale(1);
+}
+
+#thepeak {
+	background-image: url("img/peaking.png");
+}
+
+#thenobis {
+	background-image: url("img/nobislinking.png");
+}
+
+#thethrone {
+	background-image: url("img/throning.png");
+}
+
+#thefourth {
+	background-image: url("img/construction.png");
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  transform: scale(1.2);
+}
+
+.child::before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(29, 31, 39, 0.75);
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
+}
+
+.overtext {
+	color: white; /* Good thing we set a fallback color! */
+  font-family: sans-serif;
+  position: absolute;
+	display: none;
+	font-size: 35px;
+	text-align: center;
+	margin: auto;
+	top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+	height: 50px;
+}
+
+#under-construction {
+	color: #FFC41C;
+}
+
+.parent:hover .overtext,
+.parent:focus .overtext {
+  display: block;
 }
 
 .no-padding .col-md-6 {
@@ -54,6 +132,11 @@ img.portfolio {
 .card {
 	max-width: 80%;
 	margin: 4rem;
+	margin-top: 0.5rem;
+}
+
+.card:hover {
+	cursor: pointer;
 }
 
 .footer .row {
@@ -66,8 +149,17 @@ img.portfolio {
 	height: 2rem;
 }
 
-#about-title {
+.heading {
+	margin-top: 3rem;
 	color: black;
+}
+
+#resume-header {
+	margin-top: 8rem;
+}
+
+#about-row {
+	margin-bottom: 3rem;
 }
 
 .jumbotron {
@@ -98,6 +190,8 @@ h3.heading {
 
 .nav-pills > li > a.active {
 	background-color: #FFC41C!important;
+	border-radius: 0;
+	height: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -201,4 +295,29 @@ h1, h2, h3, h4 {
 .contact-section {
 	padding-bottom: 3rem;
 	padding-top: 0;
+}
+
+#butt {
+	 border: 0;
+   background-color: #FFF;
+   height:55px;
+   width:200px;
+   cursor:pointer;
+	 font-size: 18px;
+	 font-weight: bold;
+	 text-decoration: none;
+}
+
+#butt:hover {
+   background-color: #FFBD05;
+   color:white;
+}
+
+#signature {
+	width: 200px;
+	padding-top: 2rem;
+}
+
+#introduction {
+	padding-bottom: 0.5rem;
 }

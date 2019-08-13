@@ -10,8 +10,9 @@
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Hind|Ubuntu&display=swap" rel="stylesheet">
+	<script src="index.js"></script>
 </head>
-<body data-spy="scroll" data-target="#menu">
+<body data-spy="scroll" data-target="#menu" data-offset="100">
 <!-- Starting Home Section -->
 <div id="home">
 <!-- Navigation Bar Section -->
@@ -23,7 +24,7 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="menu">
-				<ul class="navbar-nav ml-auto nav-pills smooth-scroll">
+				<ul class="navbar-nav ml-auto nav-pills">
 					<li class="nav-item">
 						<a class="nav-link" href="#home">Home</a>
 					</li>
@@ -58,11 +59,11 @@
 <!-- Landing Page Caption -->
 <div class="caption center-block" data-aos="fade-right" data-aos-duration=1800>
 	<div class="col-md-6" id="landing-cap">
-			<h3 >Hello, I'm Daniel. An Aspiring Designer.</h3>
-			<p>I strive to design for the users of my product with empathy.
+			<h3 id="introduction">Hello, I'm Daniel. An Aspiring Designer.</h3>
+			<p id="bio">I strive to design for the users of my product with empathy.
 				I love to solve problems that are deeply rooted in the users with clear goals through research findings,
 				quantitative data and my intuition as a passionate designer.</p>
-			<img src="img/sign.png">
+			<img id="signature" src="img/signpic.png">
 	</div>
 </div>
 </div> <!-- End of Home Section -->
@@ -70,8 +71,8 @@
 <!-- About Me Section -->
 <div id="about">
 	<div class="jumbotron">
-		<h3 class="heading" id="about-title" data-aos="zoom-in">SOME FACTS ABOUT ME</h3>
-	<div class="row">
+		<h3 class="heading" data-aos="zoom-in">ABOUT ME</h3>
+	<div class="row" id="about-row">
 		  <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration=800>
 				<h4>B.A. IN MED ANTH</h4>
 				<p>Being able to interpret and explain the biological and cultural
@@ -108,23 +109,57 @@
 </div> <!-- End of About -->
 
 <!-- Portfolio Section -->
-
+<script>
+/*
 <div id="portfolio">
 	  <div class="container-fluid padding">
 			  <h3 class="heading">PORTFOLIO</h3>
 
 		<div class="row no-padding">
-			  <div class="col-md-6" data-aos="fade-down-right" data-aos-duration=800>
-					  <img class="portfolio" src="img/project_throne_image.png"></img>
+			  <div id="peak-project" class="col-md-6" data-aos="fade-down-right" data-aos-duration=800>
+					  <img class="portfolio" src="img/peaktopeak_image.png"></img>
 				</div>
 				<div class="col-md-6" data-aos="fade-down-left" data-aos-duration=800>
 					  <img class="portfolio" src="img/nobislink_image.png"></img>
 				</div>
 				<div class="col-md-6" data-aos="fade-up-right" data-aos-duration=800>
-					  <img class="portfolio" src="img/peaktopeak_image.png"></img>
+					  <img class="portfolio" src="img/project_throne_image.png"></img>
 				</div>
 				<div class="col-md-6" data-aos="fade-up-left" data-aos-duration=800>
 					  <img class="portfolio" src="img/4.png"></img>
+				</div>
+		</div> <!-- End Row Section -->
+		</div> <!-- End Container -->
+</div> <!-- End Portfolio Section -->
+*/
+</script>
+<div id="portfolio">
+	  <div class="container-fluid padding">
+			  <h3 class="heading">PORTFOLIO</h3>
+		<div class="row no-padding">
+			  <div id="peak-project" class="col-md-6 parent" data-aos="fade-down-right" data-aos-duration=800>
+					  <!--<img class="portfolio" src="img/peaktopeak_image.png"></img>-->
+						<div id="thepeak" class="portfolio child">
+							  <span class="overtext">Peak to Peak</span>
+						</div>
+				</div>
+				<div class="col-md-6 parent" data-aos="fade-down-left" data-aos-duration=800>
+					  <!--<img class="portfolio" src="img/nobislink_image.png"></img>-->
+						<div id="thenobis" class="portfolio child">
+							  <span class="overtext">Nobislink</span>
+						</div>
+				</div>
+				<div class="col-md-6 parent" data-aos="fade-up-right" data-aos-duration=800>
+					  <!--<img class="portfolio" src="img/project_throne_image.png"></img>-->
+						<div id="thethrone" class="portfolio child">
+							  <span class="overtext">Project Throne</span>
+						</div>
+				</div>
+				<div class="col-md-6 parent" data-aos="fade-up-left" data-aos-duration=800>
+					  <!--<img class="portfolio" src="img/4.png"></img>-->
+						<div id="thefourth" class="portfolio child">
+							  <span id="under-construction" class="overtext">This Project Under Construction</span>
+						</div>
 				</div>
 		</div> <!-- End Row Section -->
 		</div> <!-- End Container -->
@@ -133,14 +168,14 @@
 <!-- Start Resume Section -->
 
 <div id="resume">
-	  <h3 class="heading">Resume</h3>
+	  <h3 class="heading" id="resume-header">Resume</h3>
 		<div class="row padding">
 			  <div class="col-md-6">
 					  <div class="card text-center" data-aos="fade-right" data-aos-duration=1000>
-							  <img class="card-img-top" src="img/5.png">
+							  <img class="card-img-top" src="img/Collage.jpg">
 								<div class="card-body">
 									  <h4>Resume</h4>
-										<p>Learn more about my skills and experiences</p>
+										<p>Click here to learn more about my skills and experiences</p>
 								</div>
 						</div>
 				</div>
@@ -165,7 +200,7 @@
 						<div class="skill-set">
 							  <h5 class="skill-title">Interests</h3>
 								<p>UX/Product Design, User Interaction Design, AR/VR Technology, Software Development, <Br>
-								   Linguistics, User Research</p>
+								   Linguistics, User Research, Video Editing</p>
 						</div>
 				</div>
 		</div>
@@ -182,14 +217,18 @@
 								<h3 id="contact-text">Contact Me</h3>
 						</div>
 						<div class="col-md-4 text-center contact-section">
-							<p>Check out my socials:</p>
-							<a href="#" class="fa fa-facebook"></a>
-							<a href="#" class="fa fa-linkedin"></a>
-							<a href="#" class="fa fa-dribbble"></a>
+							<p>Follow me here</p>
+							<a id="facebook-link" href="#contact" class="fa fa-facebook"></a>
+							<a id="linkedin-link" href="#contact" class="fa fa-linkedin"></a>
+							<a id="dribbble-link" href="#contact" class="fa fa-dribbble"></a>
 						</div>
 						<div class="col-md-4 text-center contact-section">
 							<p>Feel free to email me at</p>
 							<strong>danielsynguyen@gmail.com</strong>
+						</div>
+						<div class="col-md-4 text-center contact-section">
+							<p>Download my resume below</p>
+							<input id="butt" type="button" value="Get My Resume"/>
 						</div>
 				</div>
 
