@@ -5,7 +5,7 @@
 	<title>Daniel Nguyen - Aspiring Designer</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Oswald:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Oswald:400,500,600,700&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,7 +16,7 @@
 <!-- Starting Home Section -->
 <div id="home">
 <!-- Navigation Bar Section -->
-<nav class="navbar navbar-expand-md fixed-top">
+<nav class="navbar navbar-expand-md navbar-dark bg-inverse fixed-top">
 	<div class="container-fluid">
 
 			<a class="navbar-brand" href="#"><img src="img/danielnguyen.png"></a>
@@ -49,24 +49,53 @@
 </nav>
 
 <!-- Start of Landing Page -->
-<div class="landing">
-	  <div class="home-wrap">
-			  <div class="home-inner">
-				</div>
-		</div>
-</div>
+<script>
+  /*
+	<div class="landing">
+		  <div class="home-wrap">
+				  <div class="home-inner">
+					</div>
+			</div>
+	</div>
 
-<!-- Landing Page Caption -->
-<div class="caption center-block" data-aos="fade-right" data-aos-duration=1800>
-	<div class="col-md-6" id="landing-cap">
-			<h3 id="introduction">Hello, I'm Daniel. An Aspiring Designer.</h3>
-			<p id="bio">I strive to design for the users of my product with empathy.
-				I love to solve problems that are deeply rooted in the users with clear goals through research findings,
-				quantitative data and my intuition as a passionate designer.</p>
-			<img id="signature" src="img/signpic.png">
+	<!-- Landing Page Caption -->
+	<div class="caption center-block" data-aos="fade-right" data-aos-duration=1800>
+		<div class="col-md-6">
+				<h3 id="introduction">Hello, I'm Daniel. An Aspiring Designer.</h3>
+				<p id="bio">I strive to design for the users of my product with empathy.
+					I love to solve problems that are deeply rooted in the users with clear goals through research findings,
+					quantitative data and my intuition as a passionate designer.</p>
+				<img id="signature" src="img/signpic.png">
+		</div>
+	</div>
+	</div> <!-- End of Home Section -->
+	*/
+</script>
+
+<div id="intro">
+	<div class="container-fluid fill-height">
+		  <div class="row no-padding fill-height">
+				  <div class="col-md-6 padding">
+						<div class="text-section">
+							<div class="email-section">
+								<div class="contact-text">Email:</div>
+								<a href="mailto:danielsynguyen@gmail.com" class="email-text">danielsynguyen@gmail.com</a>
+							</div>
+							<h3 id="introduction">Hello, I'm Daniel. An Aspiring Designer.</h3>
+							<p id="bio">I strive to design for my users with empathy
+								while having clear goals in mind to solve problems responsibly with
+								minimal unintended consequences.
+								I love to produce solutions for users through research,
+								ideation, and my intuition as a passionate designer.</p>
+							<img id="signature" src="img/signpic.png">
+						</div>
+					</div>
+					<div class="col-md-6 no-padding rightside">
+
+					</div>
+			</div>
 	</div>
 </div>
-</div> <!-- End of Home Section -->
 
 <!-- About Me Section -->
 <div id="about">
@@ -74,7 +103,7 @@
 		<h3 class="heading" data-aos="zoom-in">ABOUT ME</h3>
 	<div class="row" id="about-row">
 		  <div class="col-md-4 text-center" data-aos="zoom-in" data-aos-duration=800>
-				<h4>B.A. IN MED ANTH</h4>
+				<h4>INTEREST IN ANTHROPOLOGY</h4>
 				<p>Being able to interpret and explain the biological and cultural
 					diversity of the human species has always gathered my attention.
 					It allows me to better understand how people around the world find ways
@@ -102,7 +131,8 @@
 				   and sharing my work on my dribble account. Being exposed to human
 				   centered design and UX design during my time in University really showed
 				   me how there is a lot more that goes into design than just pure aesthetics.
-				   A responsible design practitioner needs to account for a lot of things. </p>
+				   A responsible design practitioner needs to account for a lot of things and
+					 consider how their design choices can produce unintended consequences. </p>
 			</div>
 	</div> <!-- End of row -->
 	</div> <!-- End of Jumbotron -->
@@ -180,27 +210,29 @@
 						</div>
 				</div>
 				<div class="col-md-6" data-aos="fade-left" data-aos-duration=1500>
-					  <h1 id="skillsets">SKILL SETS</h1>
-						<div class="skill-set">
-							  <h5 class="skill-title">Design & Prototype</h3>
-								<p>After Effects, Gravit Designer, Invision, Premiere</p>
-						</div>
-						<div class="skill-set">
-							  <h5 class="skill-title">Code</h3>
-								<p>HTML5, CSS3, Javascript, Python, R, Java</p>
-						</div>
-						<div class="skill-set">
-							  <h5 class="skill-title">Communication</h3>
-								<p>Intuitive, Collaborative, Listener, Responsible, Curious, Motivated</p>
-						</div>
-						<div class="skill-set">
-							  <h5 class="skill-title">Language</h3>
-								<p>Proficient understanding in Vietnamese</p>
-						</div>
-						<div class="skill-set">
-							  <h5 class="skill-title">Interests</h3>
-								<p>UX/Product Design, User Interaction Design, AR/VR Technology, Software Development, <Br>
-								   Linguistics, User Research, Video Editing</p>
+						<div class="skillset-padding">
+							<h1 id="skillsets">SKILL SETS</h1>
+							<div class="skill-set">
+								  <h5 class="skill-title">Design & Prototype</h3>
+									<p>After Effects, Gravit Designer, Invision, Premiere</p>
+							</div>
+							<div class="skill-set">
+								  <h5 class="skill-title">Code</h3>
+									<p>HTML5, CSS3, Javascript, Python, R, Java</p>
+							</div>
+							<div class="skill-set">
+								  <h5 class="skill-title">Communication</h3>
+									<p>Intuitive, Collaborative, Listener, Responsible, Curious, Motivated</p>
+							</div>
+							<div class="skill-set">
+								  <h5 class="skill-title">Language</h3>
+									<p>Proficient understanding in Vietnamese</p>
+							</div>
+							<div class="skill-set">
+								  <h5 class="skill-title">Interests</h3>
+									<p>UX/Product Design, User Interaction Design, AR/VR Technology, Software Development, <Br>
+									   Linguistics, User Research, Video Editing</p>
+							</div>
 						</div>
 				</div>
 		</div>
