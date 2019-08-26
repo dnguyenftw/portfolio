@@ -24,7 +24,7 @@
     }, false);
 
     peakPage.addEventListener('click', function() {
-      window.location.href = "#portfolio";
+      window.location.href = "peak.html";
     }, false);
 
   };
