@@ -10,11 +10,16 @@ h1 {
   font-size: 30px;
 }
 
+h3 {
+  font-family:  'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
 #sidebar {
   min-width: 250px;
   max-width: 250px;
   background-image: linear-gradient(#3F414A , #1C1D24);
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   transition: all 0.3s;
 }
@@ -125,6 +130,14 @@ ul ul a {
   color: #555;
 }
 
+.hero-image {
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-image: url("img/newpeak.png");
+}
 .navbar {
   min-height: 80px;
 }
@@ -147,4 +160,28 @@ ul ul a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
+}
+
+#objective {
+  margin-top: 50px;
+  width: 60%;
+}
+
+.sub-section {
+  display: inline;
+  padding-left: 15px;
+}
+
+.make-yellow {
+  color: #FFC41C;
+}
+
+.description {
+  padding-top: 15px;
+  margin-bottom: 60px;
+}
+
+.img-space {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }

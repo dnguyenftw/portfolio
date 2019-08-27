@@ -2,6 +2,9 @@ html {
 	scroll-behavior: smooth;
 }
 
+#home {
+	overflow: hidden;
+}
 
 body {
 	overflow-x: hidden; /*--right gutter fix--*/
@@ -209,7 +212,7 @@ h1, h2, h3, h4 {
 #landing-cap {
 	width: 80%;
 	max-width: 40%;
-	left: 5%
+	left: 5%;
 }
 /*--- iOS Landing Page Fix --*/
 .landing {

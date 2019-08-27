@@ -9,6 +9,9 @@
     var sidebarbutton = $("sidebarCollapse");
     var sidebar = $("sidebar");
     var homelogo = $("contactlogo");
+    var content = $("content");
+    var sidebarWidth = sidebar.offsetWidth;
+    //content.style.marginLeft = sidebarWidth + "px";
     sidebarbutton.addEventListener('click', function() {
       sidebar.classList.toggle("active");
     }, false);
