@@ -16,12 +16,24 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
   </head>
   <body>
+    <div id="loading">
+    <div id="loading-center">
+    <div id="loading-center-absolute">
+    <div class="object" id="object_one"></div>
+    <div class="object" id="object_two"></div>
+    <div class="object" id="object_three"></div>
+    <div class="object" id="object_four"></div>
+    </div>
+    </div>
+
+    </div>
+
 		<div class="wrapper">
 
 	    <!-- Sidebar -->
 	    <nav id="sidebar">
 				<div class="sidebar-header">
-					<img id="contactlogo" src="img/dnlogo.png">
+					<a href="index.html"><img id="contactlogo" src="img/dnlogo.png"></a>
 				</div>
 
 			<ul class="list-unstyled components">
@@ -30,10 +42,10 @@
 							<a href="#overviewSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Overview</a>
 							<ul class="collapse list-unstyled" id="overviewSubmenu">
 									<li>
-											<a href="#">Objective</a></a>
+											<a href="#objective">Objective</a></a>
 									</li>
 									<li>
-											<a href="#">Approach</a>
+											<a href="#approach">Approach</a>
 									</li>
 							</ul>
 					</li>
@@ -41,22 +53,22 @@
 							<a href="#processSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Process</a>
 							<ul class="collapse list-unstyled" id="processSubmenu">
 									<li>
-											<a href="#">Problem Statement and Ideation</a>
+											<a href="#problem-statement">Problem Statement and Ideation</a>
 									</li>
 									<li>
-											<a href="#">User Research</a>
+											<a href="#user-research">User Research</a>
 									</li>
 									<li>
-											<a href="#">Personas</a>
+											<a href="#personas">Personas</a>
 									</li>
                   <li>
-											<a href="#">Draft Design</a>
+											<a href="#draft-design">Draft Design</a>
 									</li>
                   <li>
-											<a href="#">Interface and User Flow</a>
+											<a href="#interface">Interface and User Flow</a>
 									</li>
                   <li>
-											<a href="#">Conclusion</a>
+											<a href="#conclusion">Conclusion</a>
 									</li>
 							</ul>
 					</li>
@@ -80,7 +92,7 @@
                           <a class="nav-link active-page" href="#">Peak to Peak</a>
                       </li>
                       <li class="nav-item">
-                          <a class="nav-link" href="#">Nobislink</a>
+                          <a class="nav-link" href="nobislink.html">Nobislink</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" href="#">Project Throne</a>
@@ -209,5 +221,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 		<!-- jQuery Custom Scroller CDN -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="preload.js"></script>
 	</body>
 </html>

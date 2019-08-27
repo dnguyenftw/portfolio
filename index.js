@@ -10,6 +10,7 @@
     let linkedin = $("linkedin-link");
     let dribbble = $("dribbble-link");
     let peakPage = $("peak-project");
+    let nobislinkPage = $("nobis-project")
 
     facebooklink.addEventListener('click', function() {
       openInNewTab("https://www.facebook.com/people/Daniel-Nguyen/100000871396662");
@@ -25,6 +26,10 @@
 
     peakPage.addEventListener('click', function() {
       window.location.href = "peak.html";
+    }, false);
+
+    nobislinkPage.addEventListener('click', function() {
+      window.location.href = "nobislink.html";
     }, false);
 
   };

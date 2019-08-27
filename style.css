@@ -68,6 +68,11 @@ body {
 	transform: scale(1);
 }
 
+#note-portfolio {
+	text-align: center;
+	
+}
+
 #thepeak {
 	background-image: url("img/newpeak.png");
 }
