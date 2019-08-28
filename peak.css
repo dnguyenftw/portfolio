@@ -328,3 +328,11 @@ ul ul a {
     -webkit-transform: translate(0,0) rotate(-180deg);
   }
 }
+
+#ideationimg {
+  width: 100%;
+  background-image: url("img/info200ideas.PNG");
+  background-repeat: no-repeat;
+  background-size: contain;
+background-position: 50% 50%;
+}
